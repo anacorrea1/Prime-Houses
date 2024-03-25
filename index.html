@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Houses</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="logo.png" alt="logo" />
+        <nav class="menu">
+            <ul>
+
+                <a href="team.html">Our Team</a>
+                <a href="avoidscam.html">Avoid Scams</a>
+                <a href="about.html">About Us</a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+
+        <div class="slides">
+
+            <!--Slide Images-->
+            <div class="slide first">
+                <a href="cottage.html">
+                    <img src="image1.png" alt="image 1">
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="elegant.html">
+                    <img src="image2.png" alt="image 2">
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="ecofriendly.html">
+                    <img src="image3.png" alt="image 3">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="comfortable.html">
+                    <img src="image4.png" alt="image 4">
+                </a>
+            </div>
+            <!--Slide section-->
+
+        </div>
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+
+        </div>
+    </div>
+    <!--Search Bar-->
+
+
+    <div class="section">
+        <h1 class="section-heading">FIND THE PROPERTY OF YOUR DREAMS</h1>
+        <p class="centered-paragraph">THE MOST POPULAR AREAS ON PRIME HOUSES</p>
+        <input class="searchBar" placeholder="search" oninput="search(event)">
+
+    </div>
+
+    <!--Properties-->
+    <ul class="properties">
+        <li class="property">
+            <div>
+                <div class="img house1"></div>
+                <h3>Rent a house in Dublinia</h3>
+                <a href="Dublinia.html" class="button-link">
+                    <button class="check-button">Check this property</button>
+                </a>
+            </div>
+        </li>
+
+        <li class="property">
+            <div>
+                <div class="img house2"></div>
+                <h3>Rent a house in Clontarf</h3>
+                <a href="Clontarf.html" class="=button-link">
+                    <button class="check-button">Check this property</button>
+                </a>
+            </div>
+        </li>
+
+        <li class="property">
+            <div>
+                <div class="img house3"></div>
+                <h3>Rent a house in Fairview Park</h3>
+                <a href="FairviewPark.html" class="button-link">
+                    <button class="check-button">Check this property</button>
+                </a>
+            </div>
+        </li>
+
+        <li class="property">
+            <div>
+                <div class="img house4"></div>
+                <h3>Buy a house in Galway</h3>
+                <a href="Galway.html" class="button-link">
+                    <button class="check-button">Check this property</button>
+                </a>
+            </div>
+        </li>
+
+        <li class="property">
+            <div>
+                <div class="img house5"></div>
+                <h3>Buy a house in Limerick</h3>
+                <a href="Limerick.html" class="button-link">
+                    <button class="check-button">Check this property</button>
+                </a>
+            </div>
+        </li>
+
+        <li class="property">
+            <div>
+                <div class="img house6"></div>
+                <h3>Buy a house in Cork</h3>
+                <a href="Cork.html" class="button-link">
+                    <button class="check-button">Check this property</button>
+                </a>
+            </div>
+        </li>
+
+        <!--Write Content-->
+    </ul>
+    <section class="pre-booking-section">
+        <h2>Prime Houses – Turning Houses into Homes, One Dream at a Time!</h2>
+        <p>
+            At Prime Houses, we take pride in serving the real estate needs of the Irish market for over a decade. With
+            a wealth of experience spanning more than 10 years, we have successfully assisted over 400 individuals and
+            families in finding their ideal homes. Our mission is to make the process of finding a new place to live
+            both affordable and convenient. </p>
+
+        <p>Prime Houses was founded with the purpose of simplifying the lives of those in search of a new home. Whether
+            you're looking to buy or rent, we are dedicated to providing accessible housing options in prime locations.
+            Discover the ease of finding your dream home with Prime Houses, where your comfort and happiness are our
+            top priorities. If you have any inquiries about a property, require assistance in finding your ideal home,
+            or wish to schedule a visit to any of our listings, please feel free to reach out. For questions or
+            assistance, contact us to book a viewing, we're here to help!</p>
+
+
+        </p>
+    </section>
+
+    <!-- Booking Section-->
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <div class="reservation-form">
+
+        <h2>Book a Viewing</h2>
+      
+        <form id="bookingForm">
+      
+          <label for="name">Name:</label>
+      
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email:</label>
+      
+          <input type="email" id="email" name="email" required>
+      
+          <label for="date">Preferred Date:</label>
+      
+          <input type="date" id="date" name="date" required>
+      
+          <label for="time">Preferred Time:</label>
+      
+          <input type="time" id="time" name="time" required>
+
+            <button type="button" id="submitBookingForm">Submit Booking</button>
+        </form>
+    </div>
+    <!--Footer-->
+
+    <footer>
+        <p>&copy; 2023 Prime Houses. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

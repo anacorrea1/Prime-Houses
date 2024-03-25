@@ -1,0 +1,497 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: #234550;
+    border: 1px solid white;
+    padding: 8px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+    width: 120px;
+}
+
+.menu li{
+    display: inline;
+    margin: 0 8px;
+}
+
+/* Slider style */
+.slider{
+    margin: 0 auto;
+    width: 100%;
+    height:400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 100%;
+    height: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.slide{
+    width:100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.slide img{
+    height: 400px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+margin-right: 40px;
+}
+
+manual-btn:hover{
+    background-color: black;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio:checked ~ .first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border:2px solid grey;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+margin-right:40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn{
+    background-color: black;
+}
+#radio2:checked ~ .navigation-auto .auto-btn{
+    background-color: black;
+}
+#radio3:checked ~ .navigation-auto .auto-btn{
+    background-color: black;
+}
+#radio4:checked ~ .navigation-auto .auto-btn{
+    background-color: black;
+}
+
+.section-heading{
+font-size: 30px;
+font-weight: 700;
+color: black;
+text-align: center;
+margin-bottom: 50px;
+}
+
+/* Search bar style */
+.searchBar{
+    height: 40px;
+    border: 2px solid #234550;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+    width: calc(100% - 20px);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+}
+
+/* Style of the properties */
+.centered-paragraph{
+    text-align: center;
+} 
+
+.properties{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+    
+    margin-bottom: 50px;
+    margin: 0 100px;
+}
+
+.properties .property{
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px;
+    width: 95%; 
+    
+
+}
+
+.properties .property {
+    transition: transform 0.3s ease; 
+}
+
+.properties .property:hover {
+    transform: scale(1.05); 
+}
+
+.properties .property .img{
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    height: 200px;
+    
+    
+}
+
+.properties .property .img-container {
+    height: 100px; 
+   
+}
+
+.properties .property .img.house1{
+    background: url('dublinia.jpg');
+    
+}
+
+.properties .property .img.house2{
+    background: url('clontarf.jpg');
+}
+
+.properties .property .img.house3{
+    background: url('fairview.jpg');
+}
+
+.properties .property .img.house4{
+    background: url("galway.jpg");
+}
+
+.properties .property .img.house5{
+    background: url('limerick.jpg');
+}
+
+.properties .property .img.house6{
+    background: url('cork.jpg');
+}
+
+
+/* Check this property button style*/
+.check-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    color: #fff;
+    background-color: #234550;
+    border: 2px solid #234550;
+  }
+  
+  .check-button:hover {
+    background-color: #234550;
+    border: 2px solid #234550;
+  }
+
+.menu {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.menu a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Background picture style */
+  header {
+    color:black;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .section {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 50px ;
+    background-image: url('background.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 50vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin: 30px;
+    
+}
+
+.section-heading {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.centered-paragraph {
+    font-size: 1em;
+}
+  
+/*Pictures of the properties style */
+  .gallery {
+    margin: 20px;
+  }
+  
+  .album {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+  .photo img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .description {
+    margin: 20px;
+    margin: 50px;
+    text-align: center;
+    
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+  /* Map style */
+  .map {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .map h2 {
+    color: black;
+  }
+  
+  .map img {
+    max-width: 25%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /*contact us style */
+  .contact {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    
+  }
+  
+  /* Style of written pre-booking */
+  .pre-booking-section {
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 0 20px;
+    
+   
+
+}
+
+
+.pre-booking-section h2 {
+    color: #333; 
+}
+
+.pre-booking-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666; 
+}
+
+/* Booking a view style */
+.reservation-form {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    
+}
+
+#bookingForm {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+}
+
+#bookingForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#bookingForm input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#bookingForm button {
+    background-color: #234550;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.content-image {
+    max-width: 50%;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.content-text {
+    max-width: 50%;
+}
+
+.content-text h2 {
+    color: #333;
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    
+}
+
+.content-section {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.content-image {
+    width: 100%;
+    max-width: 450px; 
+    height: auto; 
+    margin-bottom: 20px;
+    
+}
+
+/* footer style*/
+  footer {
+    background-color: #234550;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width:700px) {
+    .content-section{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: justify;
+    }
+
+    .content-section .content-text{
+        max-width: 100%;
+        margin-bottom: 20px;
+        
+    }
+
+    .content-section .content-image{
+        width: 100%;
+        margin-right: 0;
+       
+    }
+  }
